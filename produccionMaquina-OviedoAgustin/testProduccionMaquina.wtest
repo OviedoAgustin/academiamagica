@@ -1,0 +1,30 @@
+import maquina.*
+
+describe "group of tests ..." {
+
+  test "test 1" {
+    
+    assert.that(maquina.algunDiaSeProdujo(49))
+  }
+
+  test "test 2" {
+    assert.equals(62, maquina.maximoValorDeProduccion())
+  }
+
+  test "test 3" {
+    assert.equals([18, 62], maquina.valoresDeProduccionPares())
+  }
+
+  test "test 4" {
+    assert.that(maquina.produccionEsAcotada(10, 100))
+  }
+
+  test "test 5" {
+    assert.equals([43, 49, 62, 39], maquina.produccionesSuperioresA(35))
+  }
+
+  test "test 6" {
+    assert.equals([45, 20, 51, 64, 35, 41], maquina.produccionesSumando(2))
+  }
+
+}
